@@ -10,5 +10,10 @@ def main():
  r=request.form.get("r")
  return(render_template("main.html",r=r))
 
+@app.route("/imageGPT",methods=["GET","POST"])
+def main():
+ return(render_template("imageGpT.html",r=r))
+
+
 if __name__== "_main_":
   app.run()
