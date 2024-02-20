@@ -10,7 +10,7 @@ def index():
   
 @app.route("/main",methods=["GET","POST"])
 def main():
- global r,first_time==1:
+ global r,first_time
   if first_time==1:
   r=request.form.get("r")
      first_time=0
@@ -19,6 +19,11 @@ def main():
 @app.route("/image_gpt",methods=["GET","POST"])
 def image_gpt():
  return(render_template("image_gpt.html"))
+
+@app.route("/end",methods=["GET","POST"])
+def end():
+  
+ return(render_template("end.html"))
 
 if __name__== "_main_":
   app.run()
