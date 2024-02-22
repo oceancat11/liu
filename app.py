@@ -3,7 +3,7 @@ import replicate
 import os
 import time
 
-os.environ["REPLICATE_API_TOKEN"]="r8_2idkAutIh1jCAVVRIbEDgqt9zNUdbhG2cS1AF"
+os.environ["REPLICATE_API_TOKEN"]="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"
 
 app = Flask(__name__)
 
