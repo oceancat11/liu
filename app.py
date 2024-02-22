@@ -2,6 +2,7 @@ from flask import Flask,request,render_template
 import replicate
 import os
 import time
+from openai import OpenAI
 
 openai_api_key=os.getenv('OPENAI_API_KEY')
 os.environ["REPLICATE_API_TOKEN"]="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"
